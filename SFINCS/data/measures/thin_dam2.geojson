@@ -1,0 +1,8 @@
+{
+"type": "FeatureCollection",
+"name": "thin_dam2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:EPSG::32632" } },
+"features": [
+{ "type": "Feature", "properties": { "id": 1 }, "geometry": { "type": "LineString", "coordinates": [ [ 355846.921370278461836, 5596362.555968972854316 ], [ 357535.494101948803291, 5596379.786302969790995 ] ] } }
+]
+}

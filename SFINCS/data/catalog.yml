@@ -1,0 +1,65 @@
+---
+# Paths are relative to this file. The raw datasets are not in the repository; see data/README.md.
+
+osm_rivers:
+  data_type: GeoDataFrame
+  uri: osm/ahr_catchment_rivers_osm.geojson
+  driver:
+    name: pyogrio
+  metadata:
+    crs: 4326
+
+osm_streams:
+  data_type: GeoDataFrame
+  uri: osm/ahr_catchment_streams_osm.geojson
+  driver:
+    name: pyogrio
+  metadata:
+    crs: 4326
+
+osm_canals:
+  data_type: GeoDataFrame
+  uri: osm/ahr_catchment_canals_osm.geojson
+  driver:
+    name: pyogrio
+  metadata:
+    crs: 4326
+
+osm_ditches:
+  data_type: GeoDataFrame
+  uri: osm/ahr_catchment_ditches_osm.geojson
+  driver:
+    name: pyogrio
+  metadata:
+    crs: 4326
+    
+rmi_hourly:
+  uri: precip/RMI_RADFLOOD21_accum1h.nc
+  data_type: RasterDataset
+  driver: 
+    name: raster_xarray
+    options:
+      chunks:
+        x: 100
+        y: 100
+  metadata:
+    category: meteo
+    url: https://radli.meteo.be/projects/radflood21
+    crs: 3812
+  data_adapter:
+    unit_mult:
+      precip: 0.01
+
+dtm_1m:
+  uri: dtm/DTM_tiles_25832.vrt
+  data_type: RasterDataset
+  driver: 
+    name: rasterio
+    options:
+      chunks:
+        x: 1000
+        y: 1000
+  metadata:
+    category: topography
+    url: https://www.opendem.info/dtm_de_download/
+    crs: 25832

@@ -1,0 +1,28 @@
+torch>=2.1                
+torch_geometric>=2.4      
+lightning>=2.0            
+numpy
+scipy
+scikit-learn
+pandas
+matplotlib
+tqdm
+pyyaml
+wandb                     # experiment tracking (runs can be used offline: WANDB_MODE=offline)
+
+# Data pipeline: SFINCS output -> multiscale mesh -> PyTorch Geometric dataset
+xarray
+netCDF4
+networkx
+shapely
+pyproj
+fiona
+geopandas
+rasterio
+gmsh
+pygmsh
+triangle
+meshkernel
+
+# Notebooks
+ipykernel

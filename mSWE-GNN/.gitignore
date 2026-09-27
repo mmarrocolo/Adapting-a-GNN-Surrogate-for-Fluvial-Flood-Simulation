@@ -1,0 +1,43 @@
+# --- Python / tooling -------------------------------------------------------
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.claude/
+
+# --- Experiment tracking / logs ---------------------------------------------
+lightning_logs/
+wandb/
+logs/
+
+# --- Data: large, regenerable or hosted externally (see README, "Data") -----
+# Generated PyTorch Geometric datasets and mesh templates
+database/datasets/
+*.pkl
+# Raw SFINCS outputs. Simulation *inputs* (sfincs.inp/.src/.dis/.obs/...) stay
+# tracked; heavy outputs are downloaded separately. One small base simulation
+# is kept as a sample for smoke tests.
+database/raw_datasets_ahr/Simulations/**/*.nc
+database/raw_datasets_ahr/Simulations/**/*.rst
+database/raw_datasets_ahr/Simulations/**/*.log
+database/raw_datasets_ahr/Simulations/**/console_out*.txt
+database/raw_datasets_ahr/Simulations/**/*.aux.xml
+database/raw_datasets_ahr/Simulations/**/subgrid/
+!database/raw_datasets_ahr/Simulations/ahr_river_v03_Marg_additionalsrc_velocity_100m_cutpolygon_warmstart/sfincs_map.nc
+# Superseded local data, not part of the release
+database/old_files/
+*.tif
+*.gif
+*.xyz
+*.pol
+*.ist
+
+# --- Model checkpoints: hosted externally, never through git ----------------
+results/**/*.h5
+results/**/*.ckpt
+results/**/*.pt
+
+# --- Local scratch ------------------------------------------------------------
+scratch_*
+*.zip
+results/inference_last_ckpt/

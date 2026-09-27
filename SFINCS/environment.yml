@@ -1,0 +1,19 @@
+name: ahr-sfincs
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - hydromt_sfincs=1.2.2
+  - hydromt=0.10.1
+  - numpy
+  - pandas
+  - xarray
+  - netcdf4
+  - geopandas
+  - shapely>=2
+  - rasterio
+  - scipy
+  - matplotlib
+  - cartopy
+  - ipykernel
+  - jupyterlab

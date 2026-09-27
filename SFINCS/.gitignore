@@ -1,0 +1,41 @@
+# --- Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.conda/
+.venv/
+
+# --- SFINCS binary (download separately, see README)
+bin/
+
+# --- SFINCS outputs (regenerate by running the models)
+*.rst
+sfincs_map.nc
+sfincs_his.nc
+sfincs_netampr.nc
+*.aux.xml
+*.log
+console_out.txt
+sfincs_log.txt
+models/**/figs/
+
+# --- Generated model folders: only the baseline event inputs are versioned
+models/*
+!models/ahr_river_v03_Marg_additionalsrc_velocity_100m_cutpolygon_warmstart/
+
+# --- Raw third-party data (see data/README.md for sources)
+data/dtm/
+data/esa_worldcover/
+data/gadm/
+data/osm/
+data/precip/
+data/observations/q/
+data/observations/w/
+data/validation/
+
+# --- OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+*.qgz~

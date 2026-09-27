@@ -1,0 +1,2 @@
+# Keep SFINCS model input files byte-identical (no line-ending conversion)
+models/** -text
