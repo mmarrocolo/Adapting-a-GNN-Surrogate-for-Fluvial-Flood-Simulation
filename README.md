@@ -6,3 +6,5 @@ It combines two codebases:
 
 - [`mSWE-GNN/`](./mSWE-GNN) GNN surrogate model.
 - [`SFINCS/`](./SFINCS) Reference model used for training/comparison data.
+
+Each folder has it's own README file.
