@@ -85,7 +85,7 @@ The main external datasets used to construct and evaluate the model are:
 
 | Dataset                                | Source                                             | Use                                        |
 | -------------------------------------- | -------------------------------------------------- | ------------------------------------------ |
-| DGM1 1 m digital terrain model         | German state survey data, obtained through OpenDEM | Model topography and subgrid construction  |
+| DTM1 1 m digital terrain model         | German state survey data, obtained through OpenDEM | Model topography and subgrid construction  |
 | Discharge and water-level observations | Landesamt für Umwelt Rheinland-Pfalz               | Boundary forcing and model evaluation      |
 | RADFLOOD21 precipitation               | Royal Meteorological Institute of Belgium          | Estimation of ungauged tributary discharge |
 | ESA WorldCover 2021                    | ESA                                                | Spatially varying surface roughness        |
